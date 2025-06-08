@@ -65,6 +65,6 @@ async def stream_start(client, message):
             ]
         ] 
     )
-    msg_text = """<i><u>‣ ʏᴏᴜʀ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ! ⚡...</u></i>\n\n<b>‣ Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>‣ Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>‣ Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n\n<b>‣ ᴡᴀᴛᴄʜ  :</b> <i>{}</i>\n\n<b>‣ ❤️ Powered By : @Ace_Files✨😎</b>"""
+    msg_text = """<i><u>‣ ʏᴏᴜʀ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ! ⚡...</u></i>\n\n<b>‣ Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>‣ Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>‣ ❤️ Powered By : @Ace_Files✨😎</b>"""
 
     await message.reply_text(text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(message)), download, stream), quote=True, disable_web_page_preview=False, reply_markup=rm)
